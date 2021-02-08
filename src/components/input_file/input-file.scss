@@ -1,7 +1,145 @@
+.input-file {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+
 #inputFileLabel {
     cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #inputFile {
     display: none;
+}
+
+.react-crop {
+    max-width: 50%;
+}
+
+.image-and-edit-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+
+    .other-edit-options {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.canvas-div {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+
+    #number {
+        padding: 2% 5%;
+        border: 1px solid #fd4500;
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.rotate-btn {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-top: -10%;
+
+    .not-allowed {
+        cursor: not-allowed;
+    }
+
+    .rotate-icon-left, .rotate-icon-right {
+        cursor: pointer;
+    }
+}
+
+.form-and-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+
+    .download-btn {
+        height: 40px;
+        width: 30%;
+        margin-top: 5%;
+        border: 1px solid #fd4500;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-data {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 970px) {
+    .image-and-edit-options {
+        flex-direction: column;
+    }
+    .react-crop {
+        max-width: 45%;
+    }
+    .rotate-btn {
+        margin-top: 5%;
+    }
+    .canvas-div {
+        margin-left: 0;
+    }
+    .form-and-button {
+        flex-direction: column;
+
+        .form-data {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .select-picture {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .react-crop {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+    .image-and-edit-options {
+
+        .other-edit-options {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+    .canvas-div {
+        margin-left: 35%;
+    }
+    .form-and-button {
+        
+        .download-btn {
+            width: 100%;
+        }
+
+        .form-data {
+            width: 100%;
+        }
+    }
 }

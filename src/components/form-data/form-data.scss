@@ -1,0 +1,58 @@
+.form-input-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+
+    input {
+        padding: 1% 5%;
+        border: 1px solid #fd4500;
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+}
+
+.import-export {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    
+    #export, #import {
+        height: 40px;
+        border: 1px solid #fd4500;
+        background: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #export{
+        width: 40%;
+        margin-top: 8%;
+    }
+
+    #import {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .import-div {
+        width: 40%;
+        margin-right: 8%;
+    }
+}
+
+@media only screen and (max-width: 450px) {    
+    .import-export {
+        flex-direction: column;
+        margin-top: 0;
+
+        #export {
+            width: 100%;
+        }
+
+        .import-div {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+}
